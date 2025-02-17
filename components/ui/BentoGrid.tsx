@@ -1,12 +1,9 @@
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
-
-import { cn } from "@/lib/utils";
+"use client";
 
 import animationData from "@/data/confetti.json";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+import { IoCopyOutline } from "react-icons/io5";
 import MagicButton from "../MagicButton";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
@@ -36,7 +33,6 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -172,10 +168,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              ></div>
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
