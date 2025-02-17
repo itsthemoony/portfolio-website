@@ -1,5 +1,5 @@
-import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
+import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
@@ -14,15 +14,15 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
+        <h1 className="heading mx-6 lg:max-w-[45vw]">
           Ready to Take <span className="text-purple">Your</span> Digital
           Presence to the Next Level?
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
+        <p className="text-white-200 mx-6 mt-10 md:mt-10 my-5 text-center">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:kheirollahi.mahan@gmail.com">
+        <a href="mailto:kheirollahi.mahan@gmail.com" className="mt-6">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -31,7 +31,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex items-center md:gap-3 gap-6">
+      <div className="flex items-center justify-center mt-20 md:gap-3 gap-6">
         {socialMedia.map((info) => (
           <a
             key={info.id}
