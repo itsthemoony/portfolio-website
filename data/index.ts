@@ -197,7 +197,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/Linkedin.svg",
-    link: "https://www.linkedin.com/in/mahankheirollahi/"
+    link: "https://www.linkedin.com/in/mahankheirollahi"
   },
   {
     id: 2,
